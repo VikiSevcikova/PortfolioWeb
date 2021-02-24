@@ -78,7 +78,7 @@ sr.reveal('.info',{
 
   window.addEventListener("scroll", () => {
     const tag = document.querySelector('.info');
-    const spans = document.querySelectorAll('.card .info .text span');
+    const spans = document.querySelectorAll('.card1 .info .text span');
 
     if (elementInViewport(tag)) {
       //set data-scroll to know when to start the animation

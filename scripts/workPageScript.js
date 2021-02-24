@@ -14,7 +14,7 @@ sr.reveal('.project-card', {
  },50);
 
 //if link which opens popup is clicked set overflow hidden for the body
-const popuplinks = document.querySelectorAll('.project-card a');
+const popuplinks = document.querySelectorAll('.project a');
 for(let i = 0; i < popuplinks.length; i++){
     const popuplink = popuplinks[i];
     popuplink.addEventListener("click", (e)=>{

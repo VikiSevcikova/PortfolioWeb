@@ -1,81 +1,194 @@
-    .projects{
-        min-width: 90vw;
-        margin: 20px 0;
+    // .projects{
+    //     min-width: 90vw;
+    //     margin: 20px 0;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     flex-direction: column;
+    //     //     min-height: 90vh;
+    //     .title{
+    //         width: 100%;
+    //         background-color: rgba(255, 255, 255, 0.9);
+    //         h2{
+    //             margin-left: 30px;
+    //             font-size: 25px;
+    //             color: #219EBC;
+    //             text-transform: uppercase;
+    //             text-shadow: 0 3px 3px rgba(0, 0, 0, 0.212);
+    //         }
+    //     }
+        
+        
+    //     .project-cards{
+    //         display: flex;
+    //         flex-wrap: wrap;
+    //         justify-content: center;
+    //         .project-card {
+    //             width: 30%;
+    //             height: 300px;
+    //             float: left;
+    //             margin: 1%;
+    //             position: relative;
+    //             overflow: hidden;
+    //             box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+    //             img {
+    //                 width: 100%;
+    //                 height: 100%;
+    //                 object-fit: cover;
+    //                 transition: 0.5s;
+    //             }
+    //             .project-info {
+    //                 position: absolute;
+    //                 top: 0;
+    //                 bottom: 0;
+    //                 left: 0;
+    //                 right: 0;
+    //                 height: 100%;
+    //                 width: 100%;
+    //                 opacity: 0;
+    //                 transition: .5s ease;
+    //                 background-color:white;
+    //                 align-items: center;
+    //                 h3{
+    //                     position: absolute;
+    //                     top: 50%;
+    //                     left: 50%;
+    //                     transform: translate(-50%, -50%);
+    //                     font-size: 12px;
+    //                     text-align: center;
+    //                     text-transform: uppercase;
+    //                     color:  #219EBC;
+    //                     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.212);
+    //                     transition:all .5s ease;
+    //                     &:hover{
+    //                         font-size: 15px;
+    //                     }
+    //                 }
+    //             }
+    //             &:hover .project-info{
+    //                 opacity: 0.8;
+    //             }
+    //             &:hover{
+    //             box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.245);
+                
+    //             }
+    //         }
+    //     }
+    // }
+$work-bg: #6FB3B8;
+#work{
+    // background-color: $work-bg;
+
+    h1{
+        padding: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+    .web-card, .video-card, .design-card{
         display: flex;
+        flex-direction: row;
+        position: relative;
         align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        //     min-height: 90vh;
-        .title{
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.9);
-            h2{
-                margin-left: 30px;
-                font-size: 25px;
-                color: #219EBC;
-                text-transform: uppercase;
-                text-shadow: 0 3px 3px rgba(0, 0, 0, 0.212);
+        justify-content: space-evenly;
+        overflow: hidden;
+        width: 100%;
+        height: 400px;
+        padding: 20px;
+        // margin-bottom: 40px;
+    }
+    .web-card{
+        &-photo {
+            flex: 60%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: 0.5s;
+                &:hover{
+                    filter: brightness(80%);
+                    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15)
+                }
             }
         }
-        
-        
-        .project-cards{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            .project-card {
-                width: 30%;
-                height: 300px;
-                float: left;
-                margin: 1%;
-                position: relative;
-                overflow: hidden;
-                box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    transition: 0.5s;
-                }
-                .project-info {
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    height: 100%;
-                    width: 100%;
-                    opacity: 0;
-                    transition: .5s ease;
-                    background-color:white;
-                    align-items: center;
-                    h3{
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        font-size: 12px;
-                        text-align: center;
-                        text-transform: uppercase;
-                        color:  #219EBC;
-                        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.212);
-                        transition:all .5s ease;
-                        &:hover{
-                            font-size: 15px;
-                        }
-                    }
-                }
-                &:hover .project-info{
-                    opacity: 0.8;
-                }
+        &-title{
+            flex: 40%;
+            margin: 20px;
+            color: #6FB3B8;
+
+        }
+    }
+    .video-card{
+        &-photo {
+            position: relative;
+            flex: 60%;
+            height: 100%;
+            background-color: #0A0A0A;
+            &#order1{
+                order: 1;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0.9;
+                cursor: pointer;
                 &:hover{
-                box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.245);
-                
+                    filter: brightness(50%);
+                    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15)
                 }
+            }
+            i{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 50px;
+                transition:all 0.5s ease-in;
+                cursor: pointer;
+            }
+            &:hover i{
+                font-size: 60px;
+            }
+        }
+        &-title{
+            flex: 40%;
+            margin: 20px;
+            &#order2{
+                order: 2;
             }
         }
     }
-    
+
+    .design-card{
+        &-photo {
+            flex: 60%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: 0.5s;
+                &:hover{
+                    filter: brightness(80%);
+                    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15)
+                }
+            }
+            &#order1{
+                order: 1;
+            }
+        }
+        &-title{
+            flex: 40%;
+            margin: 20px;
+
+            &#order2{
+                order: 2;
+            }
+        }
+    }
+}
 .popup {
     display: flex;
     align-items: center;
@@ -97,8 +210,6 @@
         right: -100vh;
         transform: rotate(32deg);
         transition:all .64s ease-in-out;
-        // transform: scale(0.6);
-        // transition: opacity 250ms 250ms ease, transform 300ms 250ms ease;
      
             .popup-photo{
                 .horizontal{
@@ -132,7 +243,7 @@
     }
     &-photo {
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: flex-end;
       width: 100%;
       height: 100%;
@@ -147,6 +258,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      width: 100%;
       height: 100%;
       padding-left: 10px;
       padding-right: 10px;
@@ -187,14 +299,40 @@
 }
 
 @media only screen and (max-width: 700px) {
-    .projects{
-            .project-cards{
-                justify-content: center;                
-                .project-card {
-                    flex: 43%;
+    #work{
+        .web-card,  .video-card, .design-card{
+            flex-direction: column;
+           
+        }
+        .video-card , .design-card, .web-card{
+            align-items: flex-start;
+            &-photo{
+                &#order1{
+                    order: 2;
                 }
             }
-                
+            &-title{
+                flex: 0%;
+                margin:0;
+                &#order2{
+                    order: 1;
+                }
+            }
+        }
+        
+    }
+   
+        .popup{
+            &-inner{
+                width: 90%;
+                flex-direction: column;
+                .popup-photo{
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
         }
     }
   

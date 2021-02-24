@@ -1,24 +1,25 @@
-window.onload = () => {
-    const transtition_elem = document.querySelector('.transition');
-    const navLinkAnchors = document.querySelectorAll(".nav-links li a");
+// window.onload = () => {
+//     const transtition_elem = document.querySelector('.transition');
+//     const navLinkAnchors = document.querySelectorAll(".nav-links li a");
 
-    setTimeout(() => {
-        transtition_elem.classList.remove('is-active');
-    }, 500);
+//     setTimeout(() => {
+//         transtition_elem.classList.remove('is-active');
+//     }, 500);
 
-    for(let i = 0; i < navLinkAnchors.length; i++){
-        const anchor = navLinkAnchors[i];
-        anchor.addEventListener('click', e => {
-            e.preventDefault();
-            let target = e.target.href;
-            console.log(target);
-            transtition_elem.classList.add('is-active');
-            setTimeout(() => {
-                window.location.href = target;
-            }, 500);
-        })
-    }
-}
+//     for(let i = 0; i < navLinkAnchors.length; i++){
+//         const anchor = navLinkAnchors[i];
+//         anchor.addEventListener('click', e => {
+//             e.preventDefault();
+//             let target = e.target.href;
+//             console.log(target);
+//             transtition_elem.classList.add('is-active');
+//             setTimeout(() => {
+//                 window.location.href = target;
+//                 transtition_elem.classList.remove('is-active');
+//             }, 500);
+//         })
+//     }
+// }
 
 const body = document.querySelector('body');
 const sr = ScrollReveal( {
@@ -34,14 +35,31 @@ const sr = ScrollReveal( {
     origin: 'top',
     distance: '100px'
  });
+ sr.reveal('#skills .grid div img',{
+     duration: 1000,
+    interval: 20
+
+ });
+ sr.reveal('#work .work-title',{
+    origin: 'bottom',
+    distance: '100px'
+ });
+
+ sr.reveal('#work .project div',{
+    origin: 'bottom',
+    distance: '100px'
+ });
+ sr.reveal('#work .project div a',{
+    origin: 'bottom',
+    distance: '100px',
+    delay: '500'
+ });
+
 
 const navSlide = () => {
     const navIcon = document.querySelector(".nav-icon");
     const navIconAnchor = document.querySelector(".nav-icon a");
-    // const navLinksDiv = document.querySelector(".nav-links");
-//     const navLinks = document.querySelectorAll(".nav-links li");
     const navIconDivs = document.querySelectorAll(".nav-icon a div");
-//     const contactDiv = document.querySelector(".contact");
 
     navIcon.addEventListener('click', () => {
         
@@ -78,7 +96,7 @@ const banner = document.querySelector('.banner');
 const container = document.querySelector('.container');
 //items
 const image = document.querySelector('.image img');
-const title = document.querySelector('.image .title h1');
+const title = document.querySelector('.container .title');
 
 
 //moving animation
@@ -121,6 +139,19 @@ window.addEventListener('scroll', function(){
     scroll.classList.toggle('active', window.scrollY > 500);
     body.classList.toggle('perspective', window.scrollY < 500);
 });
+
+//tint
+const images = document.querySelectorAll('#skills .grid img');
+let isWhite = true;
+for (const image of images) {
+    image.addEventListener("mouseenter", e => {
+        image.src = './img/logos/'+image.alt+'.png';
+    });
+    image.addEventListener("mouseleave", e => {
+        image.src = './img/logos/w-'+image.alt+'.png';
+    });
+}
+
 
 const app = () => {
     navSlide();
