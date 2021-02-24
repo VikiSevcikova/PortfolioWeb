@@ -37,8 +37,9 @@ $who-bg: #ffe15c;
             .photo4{
                 position: absolute;    
                 left:-30px;
-                bottom: -170px;
-                width: 100%;
+                bottom: -150px;
+                height: 150%;
+                // width: 100%;
                 filter:contrast(120%);
                 z-index: -1;
             }
@@ -354,20 +355,7 @@ $who-bg: #ffe15c;
             }
             
         }
-        .card2{
-            flex-direction: column;
-            justify-content: space-between;
-            .collage{
-                order:2;
-                width: 100%;
-            }
-            .contact-icons{
-                order:1;
-                width: 100%;
-                justify-content: center;
-                margin-top: 20px;
-            }
-        }
+       
     }
     .timeline{
         &::before{
@@ -391,4 +379,28 @@ $who-bg: #ffe15c;
         }
     }
     
+}
+
+    @media only screen and (max-width: 500px){
+    #introduction{
+        .card2{
+            flex-direction: column;
+            justify-content: space-between;
+            .collage{
+                order:2;
+                width: 100%;
+                .photo4{
+                    bottom:0;
+                    height: 100%;
+                    width: auto;
+                }
+            }
+            .contact-icons{
+                order:1;
+                width: 100%;
+                justify-content: space-around;
+                margin-top: 20px;
+            }
+        }
+    }
 }

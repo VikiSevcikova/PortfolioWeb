@@ -6,33 +6,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/90a8f3d511.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style/main.css">
-        <link rel="stylesheet" href="style/transitions.css">
-        <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="style/transitions.css"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+
     </head>
-    <body id="who">
-
-        <div class="transition transition-3 is-active">
-
-        </div>
-
+    <body>
         <div class="scrollUpBtn">
-            <a href="#who">
+            <a href="#top">
                 <i class="fas fa-arrow-circle-up"></i>      
             </a>        
         </div>
             
-        <nav>
+        <nav id="top">
             <div class="logo">
                 <h4>VS</h4>
             </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">
+                    <li><a href="#introduction">
                         Who
                     </a></li>
-                    <li><a href="what.html">
+                    <li><a href="#skills">
                         What
                     </a></li>
-                    <li><a href="work.html">
+                    <li><a href="#work">
                         Work
                     </a></li>
                 </ul>
@@ -58,7 +55,7 @@
                                     Who
                                     <div class="underline"></div>
                                 </a></li>
-                                <li><a href="#what">
+                                <li><a href="#skills">
                                     What
                                     <div class="underline"></div>
                                 </a></li>
@@ -90,10 +87,39 @@
             <div class="container">
                 <div class="image">
                     <img src="img/flower.png" alt="daisy"/>
-                    <div class="title">
-                        <h1>who</h1>
-                    </div>
                 </div>
+
+                    <div class="title">
+                        <svg viewBox="0 0 1300 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Welcome to my page!</title>
+                            <g stroke="none" fill="none" fill-rule="evenodd" fill-opacity="0">
+                                <text id="Welcome to my page!" stroke="#fff" fill="#fff" font-weight="normal" font-family="Sriracha" font-size="130px">
+                                    <tspan x="3" y="109"><!--
+                                        --><tspan>W</tspan><!--
+                                        --><tspan>e</tspan><!--
+                                        --><tspan>l</tspan><!--
+                                        --><tspan>c</tspan><!--
+                                        --><tspan>o</tspan><!--
+                                        --><tspan>m</tspan><!--
+                                        --><tspan>e</tspan><!--
+                                        --><tspan> </tspan><!--
+                                        --><tspan>t</tspan><!--
+                                        --><tspan>o</tspan><!--
+                                        --><tspan> </tspan><!--
+                                        --><tspan>m</tspan><!--
+                                        --><tspan>y</tspan><!--
+                                        --><tspan> </tspan><!--
+                                        --><tspan>p</tspan><!--
+                                        --><tspan>a</tspan><!--
+                                        --><tspan>g</tspan><!--
+                                        --><tspan>e</tspan><!--
+                                        --><tspan>!</tspan><!--
+                                    --></tspan>
+                                </text>
+                            </g>
+                        </svg>
+                        <!-- <h1>Hi!</br> My name</br> is Viki.</h1> -->
+                    </div>
             </div>
             <div class="scroll">
                 <a href="#introduction">
@@ -104,25 +130,50 @@
             </div>   
         </div>
        
-        <div id="introduction">
-            <div class="card">
+        <div id="introduction">            
+            <div class="card1">
+                <div class="info">
+                    <h2 class="text">
+                        <span>Hi, my name is Viki.</span>
+                        <span>I am hard-working, reliable</span>
+                        <span>FULL-STACK DEVELOPER</span>
+                        <span>with a passion for new challenges.</span>
+                    </h2>
+                </div>
                 <div class="photo">
                     <h1>Viktoria Sevcikova</h1>
-                      <img src="img/photo.png" />
+                      <img src="img/profile-pic (3).png" class="wrap"/>
                     <div class="glow-wrap">
                       <i class="glow"></i>
                     </div>
                   </div>
-                  <div class="info">
-                    <div class="bg"></div>
-                    <h2 class="text">
-                        <span>I am hard-working, reliable full-stack developer</span>
-                        <span>with a passion for new challenges.</span>
-                    </h2>
-                </div>
             </div>
+            <div class="card2">
+                <div class="contact-icons">
+                    <a href="mailto:viki.sevcikova63@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/viktoriasevcikova/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/VikiSevcikova" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+                <div class="collage">
+                    <img src="img/daisies.png" alt="" class="photo4">
+                    <img src="img/photo2.png" alt="" class="photo2">
+                    <img src="img/photo3.png" alt="" class="photo3">
+                </div>
+                
+            </div>
+            
+            <div class="position-absolute">
+                <div class="scroll">
+                    <a href="#timeline-1">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                    </a>
+                </div>   
+            </div>
+            
         </div>
-
+        
 
         <div class="timeline-container" id="timeline-1" >
             <div class="bg-image"></div>
@@ -171,13 +222,160 @@
                     </div>
                 </div>
 
-                </div>
+            </div>
+            <div class="position-absolute">
+                <div class="scroll">
+                    <a href="#skills">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                    </a>
+                </div>   
             </div>
         </div>
 
+        <div id="skills">
+            <div class="title">
+                <h1>
+                    Which skills I can offer you?
+                </h1>
+            </div>
+
+            <div class="grid">
+                <div><img src="img/logos/w-java.png" alt="java"></div>
+                <div><img src="img/logos/w-js.png" alt="js"></div>
+                <div><img src="img/logos/w-csharp.png" alt="csharp"></div>
+                <div><img src="img/logos/w-php.png" alt="php"></div>
+                <div><img src="img/logos/w-html.png" alt="html"></div>
+                <div><img src="img/logos/w-css.png" alt="css"></div>
+                <div><img src="img/logos/w-sass.png" alt="sass"></div>
+                <div><img src="img/logos/w-jquery.png" alt="jquery"></div>
+                <div><img src="img/logos/w-bootstrap.png" alt="bootstrap"></div>
+                <div><img src="img/logos/w-react.png" alt="react"></div>
+                <div><img src="img/logos/w-nodejs.png" alt="nodejs"></div>
+                <div><img src="img/logos/w-graphql.png" alt="graphql"></div>
+                <div><img src="img/logos/w-mssql.png" alt="mssql"></div>
+                <!-- <div><img src="img/logos/mysql.png" alt=""></div> -->
+                <div><img src="img/logos/w-git.png" alt="git"></div>
+                <div><img src="img/logos/w-unity.png" alt="unity"></div>
+                <div><img src="img/logos/w-as.png" alt="as"></div>
+                <div><img src="img/logos/w-mvs.png" alt="mvs"></div>
+                <div><img src="img/logos/w-intellij.png" alt="intellij"></div>
+                <div><img src="img/logos/w-photoshop.png" alt="photoshop"></div>
+                <div><img src="img/logos/w-illustrator.png" alt="illustrator"></div>
+                <div><img src="img/logos/w-davinci.png" alt="davinci"></div>
+              </div>
+
+            <div class="position-absolute">
+                <div class="scroll">
+                    <a href="#skills">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                    </a>
+                </div>   
+            </div>
+        </div>
+
+        <div id="work">
+            <div>
+                <h1 class="work-title">
+                    My work
+                </h1>
+
+            </div>
+            <div class="project web-card">
+                <div class="web-card-title">
+                        <h2>mbes.sk</h2>
+                        <p>Website was created in Wordpress.</p>
+                </div>
+                <a href="#" class=" web-card-photo project-info" data-popup="popup-mbes">
+                    <img src="img/mbes2.png" alt="mbes.sk">
+                </a>
+            </div>
+            <div class="popup" id="popup-mbes">
+                <div class="popup-inner">
+                  <div class="popup-photo">
+                    <img src="img/mbes.png" alt="">
+                  </div>
+                  <div class="popup-text">
+                    <h1>mbes.sk</h1>
+                    <p>MBES is a company that provides everything for the protection of your household. The website was created using wordpress.</p>
+                    <a class="website-link" href="http://www.mbes.sk/" target="_blank">Check the website <i class="far fa-laugh-beam"></i> </a>
+                </div>
+                </div>
+                <div class="popup-close">&#10006;</div> 
+            </div>
+
+            <div class="project video-card">
+                <div id="order2" class="video-card-title">
+                    <h2>Augmented Reality</h2>
+                    <h3>Change yourself to a superhero</h3>
+                    <p>Application was created for my Master's Degree Thesis, using Microsoft Kinect, unity3D technologies and C# programming language.</p>
+                </div>
+                <a id="order1" href="#" class="project-info video-card-photo" data-popup="missing-video">
+                    <img src="img/superheroes.PNG" alt="mbes.sk">                   
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+            <div class="popup" id="missing-video">
+                <div class="popup-inner">
+                  <div class="popup-photo">
+                    <img src="img/sad.gif" alt="">
+                  </div>
+                  <div class="popup-text">
+                    <p>Sorry, video was not found.</p>
+                </div>
+                </div>
+                <div class="popup-close">&#10006;</div> 
+            </div>
 
 
-        <footer id="who">
+            <div class="project video-card">
+                <div class="video-card-title">
+                    <h2>Nitra Knights</h2>
+                    <p>In my free time I am helping american football team with marketing by creating poster or videos like this. --></p>
+                </div>
+                <a href="#" class="project-info video-card-photo" data-popup="missing-video">
+                    <img src="img/nknike.PNG" alt="mbes.sk">                   
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+            <div class="popup" id="missing-video">
+                <div class="popup-inner">
+                  <div class="popup-photo">
+                    <img src="img/sad.gif" alt="">
+                  </div>
+                  <div class="popup-text">
+                    <p>Sorry, video was not found.</p>
+                </div>
+                </div>
+                <div class="popup-close">&#10006;</div> 
+            </div>
+
+            <div class="project design-card">
+                <div id="order2" class="design-card-title">
+                    <h2>SYMPLE'S</h2>
+                    <p>I also get familiar with adobe illustrator in which I created few logos.</p>
+                </div>
+                <a id="order1" href="#" class="project-info design-card-photo" data-popup="popup-symples">
+                    <img src="img/symplepreview.png" alt="mbes.sk">                   
+                </a>
+            </div>
+
+            <div class="popup" id="popup-symples">
+                <div class="popup-wrap">
+                    <div class="popup-photo">
+                        <img src="img/symples.png" alt="symples" class="horizontal">
+                    </div>
+                </div>
+                <div class="popup-close">&#10006;</div> 
+            </div>
+
+        </div>
+
+
+        <footer>
             <div class="logo">
                 <h3>VS</h3>
                 <span>Wish you a beautiful day!</span>
@@ -189,7 +387,7 @@
                 <span>Vancouver, Canada</span>
             </div>
             <div id="contact">
-                <ul class="contact-links-footer">
+                <ul class="contact-links">
                     <li><a class="icon" href="mailto:viki.sevcikova63@gmail.com"><i class="fas fa-envelope"></i></a></li>
                     <li><a class="icon" href="https://www.linkedin.com/in/viktoriasevcikova/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                     <li><a class="icon" href="https://github.com/VikiSevcikova" target="_blank"><i class="fab fa-github"></i></a></li>
@@ -201,4 +399,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/whoPageScript.js"></script>
+    <script src="scripts/workPageScript.js"></script>
 </html>

@@ -490,8 +490,8 @@
 #introduction .card2 .collage .photo4 {
   position: absolute;
   left: -30px;
-  bottom: -170px;
-  width: 100%;
+  bottom: -150px;
+  height: 150%;
   -webkit-filter: contrast(120%);
           filter: contrast(120%);
   z-index: -1;
@@ -907,31 +907,6 @@
   #introduction .card1 .photo {
     margin-bottom: 30px;
   }
-  #introduction .card2 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #introduction .card2 .collage {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    width: 100%;
-  }
-  #introduction .card2 .contact-icons {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 20px;
-  }
   .timeline::before {
     left: 40px !important;
   }
@@ -951,6 +926,38 @@
   }
   .timeline .timeline-item:last-child {
     padding-bottom: 40px  !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #introduction .card2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #introduction .card2 .collage {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+  }
+  #introduction .card2 .collage .photo4 {
+    bottom: 0;
+    height: 100%;
+    width: auto;
+  }
+  #introduction .card2 .contact-icons {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 20px;
   }
 }
 
