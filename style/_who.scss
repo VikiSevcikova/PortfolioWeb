@@ -1,5 +1,3 @@
-$who-bg: #ffe15c;    
-
 #introduction{
     display: flex;
     flex-direction: column;
@@ -9,7 +7,6 @@ $who-bg: #ffe15c;
     overflow: hidden;
     min-height: 100vh;
     transition: opacity 1s;
-    // background-color: $who-bg;
     .card2{
         display: flex;
         flex-direction: row;
@@ -25,20 +22,22 @@ $who-bg: #ffe15c;
             .photo2{
                 position: absolute;
                 transform: rotate(15deg);
-                left: 150px;
+                left: 25%;
                 bottom: -50px;
+                width: 30%;
                 filter:contrast(120%);
             }
             .photo3{
                 position: relative;    
                 bottom: -50px;
+                width: 30%;
                 filter:contrast(120%);
             }
             .photo4{
                 position: absolute;    
                 left:-30px;
-                bottom: -150px;
-                height: 150%;
+                bottom: -160px;
+                width: 100%;
                 // width: 100%;
                 filter:contrast(120%);
                 z-index: -1;
@@ -48,10 +47,11 @@ $who-bg: #ffe15c;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            align-items: center;
             width: 50%;
             order:2;
             a{
-                font-size: 7vw;
+                font-size: 10vw;
                 &:hover i{
                     color: rgba(255, 255, 255, 0.623);
                 }
@@ -229,8 +229,6 @@ $who-bg: #ffe15c;
         bottom: 0;
         left:0;
         right: 0;
-        width: 100%;
-        height: 100%;
         padding: 80px 0;
         transition: 0.3s ease 0s;
         background-attachment: fixed;
@@ -354,9 +352,9 @@ $who-bg: #ffe15c;
             .photo{
                 margin-bottom: 30px;
             
-            }
-            
+            }   
         }
+       
        
     }
     .timeline{
@@ -383,7 +381,7 @@ $who-bg: #ffe15c;
     
 }
 
-    @media only screen and (max-width: 500px){
+    @media only screen and (max-width: 650px){
     #introduction{
         .card2{
             flex-direction: column;
@@ -391,15 +389,16 @@ $who-bg: #ffe15c;
             .collage{
                 order:2;
                 width: 100%;
-                .photo4{
-                    bottom:0;
-                    height: 100%;
-                    width: auto;
-                }
+                // .photo4{
+                //     bottom:0;
+                //     height: 100%;
+                //     width: auto;
+                // }
             }
             .contact-icons{
                 order:1;
                 width: 100%;
+                flex-direction: row;
                 justify-content: space-around;
                 margin-top: 20px;
             }

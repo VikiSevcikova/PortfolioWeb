@@ -49,38 +49,56 @@ const sr = ScrollReveal( {
     origin: 'bottom',
     distance: '100px'
  });
- sr.reveal('#work .project div a',{
+ sr.reveal('#work .project a',{
     origin: 'bottom',
     distance: '100px',
     delay: '500'
  });
 
+ 
+const changeNavIconColor = (color) => {
+    navIconDivs.forEach((div) => {
+            div.style.background = color;
+    });
+}
 
-const navSlide = () => {
+// const navSlide = () => {
     const navIcon = document.querySelector(".nav-icon");
     const navIconAnchor = document.querySelector(".nav-icon a");
     const navIconDivs = document.querySelectorAll(".nav-icon a div");
+    const navLinks = document.querySelectorAll(".popup-nav-links li a");
 
+    let isNavOpen = false;
     navIcon.addEventListener('click', () => {
         
-        //change color of icon
-        navIconDivs.forEach((div, index) => {
-            if(div.style.background == 'black'){
-                div.style.background = 'white';
-                navIconAnchor.href = '#';
-                body.classList.remove('overflow-hidden');
-            }else{
-                div.style.background = 'black';
-                navIconAnchor.href = '#popup-nav';
-                body.classList.add('overflow-hidden');
-            }
-        });
-        
+        if(isNavOpen){
+            isNavOpen = false;
+            changeNavIconColor('white');
+            navIconAnchor.href = '#';
+            body.classList.remove('overflow-hidden');
+        }else{
+            isNavOpen = true;
+            changeNavIconColor('black');
+            navIconAnchor.href = '#popup-nav';
+            body.classList.add('overflow-hidden');
+        }
         // icon animation
         navIcon.classList.toggle('toggle');
         
     });
-}
+    navLinks.forEach((navLink) => {
+        navLink.addEventListener('click', () => {
+                if(isNavOpen){
+                    isNavOpen = false;
+                    changeNavIconColor('white');
+                    body.classList.remove('overflow-hidden');
+                }
+            // icon animation
+            navIcon.classList.toggle('toggle');
+        });
+    });
+// }
+
 
 //set active class to the navbar link
 const currentPage = location.href;
@@ -153,8 +171,8 @@ for (const image of images) {
 }
 
 
-const app = () => {
-    navSlide();
-}
+// const app = () => {
+//     navSlide();
+// }
 
-app();
+// app();

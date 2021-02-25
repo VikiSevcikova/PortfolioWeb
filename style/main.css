@@ -474,8 +474,9 @@
   position: absolute;
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
-  left: 150px;
+  left: 25%;
   bottom: -50px;
+  width: 30%;
   -webkit-filter: contrast(120%);
           filter: contrast(120%);
 }
@@ -483,6 +484,7 @@
 #introduction .card2 .collage .photo3 {
   position: relative;
   bottom: -50px;
+  width: 30%;
   -webkit-filter: contrast(120%);
           filter: contrast(120%);
 }
@@ -490,8 +492,8 @@
 #introduction .card2 .collage .photo4 {
   position: absolute;
   left: -30px;
-  bottom: -150px;
-  height: 150%;
+  bottom: -160px;
+  width: 100%;
   -webkit-filter: contrast(120%);
           filter: contrast(120%);
   z-index: -1;
@@ -507,6 +509,9 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 50%;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -514,7 +519,7 @@
 }
 
 #introduction .card2 .contact-icons a {
-  font-size: 7vw;
+  font-size: 10vw;
 }
 
 #introduction .card2 .contact-icons a:hover i {
@@ -929,7 +934,7 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
   #introduction .card2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -945,16 +950,15 @@
             order: 2;
     width: 100%;
   }
-  #introduction .card2 .collage .photo4 {
-    bottom: 0;
-    height: 100%;
-    width: auto;
-  }
   #introduction .card2 .contact-icons {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
     width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin-top: 20px;
@@ -967,7 +971,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: white;
-  font-family: 'Sriracha', cursive;
+  font-family: 'Comfortaa', cursive;
 }
 
 html {
@@ -1069,34 +1073,6 @@ nav .nav-links li a:hover {
 
 nav .nav-links li a.active {
   font-size: 22px;
-}
-
-nav .nav-contact {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 20px;
-  padding-right: 30px;
-}
-
-nav .nav-contact::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  top: 6vh;
-  background-color: white;
-  border-radius: 25px;
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-nav .nav-contact:hover::after {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
 }
 
 nav .nav-icon {
@@ -1443,9 +1419,8 @@ footer .logo {
 }
 
 footer .logo span {
-  margin-left: 5px;
+  margin-right: 5px;
   font-size: 10px;
-  width: 120px;
 }
 
 footer .contact-links {
@@ -1569,7 +1544,7 @@ footer .contact-links li a .icon::before {
   }
   nav .popup-nav__text .popup-nav-links li {
     font-size: 30px;
-    margin: 10px;
+    margin: 20px;
     list-style: none;
   }
   nav .popup-nav__text .popup-nav-links li a {
@@ -1578,10 +1553,12 @@ footer .contact-links li a .icon::before {
     letter-spacing: 2px;
     font-size: 30px;
     font-weight: bold;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    text-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   }
   nav .popup-nav__text .popup-nav-links li a:hover {
-    -webkit-transform: scaleX(1.2);
-            transform: scaleX(1.2);
+    font-size: 32px;
   }
   nav .popup-nav__text span {
     text-align: center;
@@ -1589,6 +1566,7 @@ footer .contact-links li a .icon::before {
     margin-top: 100px;
     font-size: 30px;
     font-weight: bold;
+    text-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   }
   nav .popup-nav__text .contact-links {
     display: -webkit-box;
@@ -1613,6 +1591,7 @@ footer .contact-links li a .icon::before {
   }
   nav .popup-nav__text .contact-links li a i {
     color: black;
+    text-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   }
   nav .popup-nav__text .contact-links li a i:hover {
     color: rgba(0, 0, 0, 0.623);
