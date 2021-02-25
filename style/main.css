@@ -193,12 +193,24 @@
   transition: all .64s ease-in-out;
 }
 
-.popup-wrap .popup-photo .horizontal {
-  width: 80%;
+.popup-wrap .popup-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup-wrap .popup-image .horizontal {
+  width: 80vw;
   height: auto;
 }
 
-.popup-wrap .popup-photo .vertical {
+.popup-wrap .popup-image .vertical {
   height: 80vh;
   width: auto;
 }

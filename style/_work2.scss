@@ -211,9 +211,12 @@ $work-bg: #6FB3B8;
         transform: rotate(32deg);
         transition:all .64s ease-in-out;
      
-            .popup-photo{
+            .popup-image{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 .horizontal{
-                    width: 80%;
+                    width: 80vw;
                     height: auto;
                 }
                 .vertical{
