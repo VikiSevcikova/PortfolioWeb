@@ -27,9 +27,9 @@
 }
 
 #work .web-card-photo {
-  -webkit-box-flex: 60%;
-      -ms-flex: 60%;
-          flex: 60%;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
   height: 100%;
 }
 
@@ -59,9 +59,9 @@
 
 #work .video-card-photo {
   position: relative;
-  -webkit-box-flex: 60%;
-      -ms-flex: 60%;
-          flex: 60%;
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
   height: 100%;
   background-color: #0A0A0A;
 }
@@ -118,9 +118,9 @@
 }
 
 #work .design-card-photo {
-  -webkit-box-flex: 60%;
-      -ms-flex: 60%;
-          flex: 60%;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
   height: 100%;
 }
 
