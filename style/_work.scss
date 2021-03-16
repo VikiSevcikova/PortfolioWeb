@@ -77,7 +77,6 @@
     // }
 $work-bg: #6FB3B8;
 #work{
-    // background-color: $work-bg;
 
     h1{
         padding: 30px;
@@ -85,7 +84,20 @@ $work-bg: #6FB3B8;
         text-transform: uppercase;
         font-weight: normal;
     }
-    .web-card, .video-card, .design-card{
+    // .web-card, .video-card, .design-card{
+    //     display: flex;
+    //     flex-direction: row;
+    //     position: relative;
+    //     align-items: center;
+    //     justify-content: space-evenly;
+    //     overflow: hidden;
+    //     width: 100%;
+    //     height: 400px;
+    //     padding: 20px;
+    //     // margin-bottom: 40px;
+    // }
+
+    .project{
         display: flex;
         flex-direction: row;
         position: relative;
@@ -93,13 +105,10 @@ $work-bg: #6FB3B8;
         justify-content: space-evenly;
         overflow: hidden;
         width: 100%;
-        height: 400px;
-        padding: 20px;
-        // margin-bottom: 40px;
-    }
-    .web-card{
+        height: 80vh;
+        padding: 10vh;
         &-photo {
-            flex: 50%;
+            flex: 40%;
             height: 100%;
             img {
                 width: 100%;
@@ -110,34 +119,7 @@ $work-bg: #6FB3B8;
                     filter: brightness(80%);
                     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15)
                 }
-            }
-        }
-        &-title{
-            flex: 40%;
-            margin: 20px;
-            color: #6FB3B8;
 
-        }
-    }
-    .video-card{
-        &-photo {
-            position: relative;
-            flex: 40%;
-            height: 100%;
-            background-color: #0A0A0A;
-            &#order1{
-                order: 1;
-            }
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                opacity: 0.9;
-                cursor: pointer;
-                &:hover{
-                    filter: brightness(50%);
-                    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15)
-                }
             }
             i{
                 position: absolute;
@@ -152,42 +134,109 @@ $work-bg: #6FB3B8;
                 font-size: 60px;
             }
         }
-        &-title{
+        &-info{
             flex: 40%;
             margin: 20px;
-            &#order2{
-                order: 2;
+            h2{
+                padding: 20px;
+                color:#6FB3B8;
+                background-color: #ffffffac;
+                transform: translateY(-20px);
             }
+
         }
     }
+    // .web-card{
+    //     &-photo {
+    //         flex: 50%;
+    //         height: 100%;
+    //         img {
+    //             width: 100%;
+    //             height: 100%;
+    //             object-fit: cover;
+    //             transition: 0.5s;
+    //             &:hover{
+    //                 filter: brightness(80%);
+    //                 box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15)
+    //             }
+    //         }
+    //     }
+    //     &-title{
+    //         flex: 40%;
+    //         margin: 20px;
+    //         color: #6FB3B8;
 
-    .design-card{
-        &-photo {
-            flex: 50%;
-            height: 100%;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: 0.5s;
-                &:hover{
-                    filter: brightness(80%);
-                    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15)
-                }
-            }
-            &#order1{
-                order: 1;
-            }
-        }
-        &-title{
-            flex: 40%;
-            margin: 20px;
+    //     }
+    // }
+    // .video-card{
+    //     &-photo {
+    //         position: relative;
+    //         flex: 40%;
+    //         height: 100%;
+    //         background-color: #0A0A0A;
+    //         // &#order1{
+    //         //     order: 1;
+    //         // }
+    //         img {
+    //             width: 100%;
+    //             height: 100%;
+    //             object-fit: cover;
+    //             opacity: 0.9;
+    //             cursor: pointer;
+    //             &:hover{
+    //                 filter: brightness(50%);
+    //                 box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15)
+    //             }
+    //         }
+    //         i{
+    //             position: absolute;
+    //             top: 50%;
+    //             left: 50%;
+    //             transform: translate(-50%, -50%);
+    //             font-size: 50px;
+    //             transition:all 0.5s ease-in;
+    //             cursor: pointer;
+    //         }
+    //         &:hover i{
+    //             font-size: 60px;
+    //         }
+    //     }
+    //     &-title{
+    //         flex: 40%;
+    //         margin: 20px;
+    //         // &#order2{
+    //         //     order: 2;
+    //         // }
+    //     }
+    // }
 
-            &#order2{
-                order: 2;
-            }
-        }
-    }
+    // .design-card{
+    //     &-photo {
+    //         flex: 50%;
+    //         height: 100%;
+    //         img {
+    //             width: 100%;
+    //             height: 100%;
+    //             object-fit: cover;
+    //             transition: 0.5s;
+    //             &:hover{
+    //                 filter: brightness(80%);
+    //                 box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15)
+    //             }
+    //         }
+    //         // &#order1{
+    //         //     order: 1;
+    //         // }
+    //     }
+    //     &-title{
+    //         flex: 40%;
+    //         margin: 20px;
+
+    //         // &#order2{
+    //         //     order: 2;
+    //         // }
+    //     }
+    // }
 }
 .popup {
     display: flex;
@@ -303,26 +352,20 @@ $work-bg: #6FB3B8;
 
 @media only screen and (max-width: 700px) {
     #work{
-        .web-card,  .video-card, .design-card{
-            flex-direction: column;
-           
-        }
-        .video-card , .design-card, .web-card{
+        .project{
             align-items: flex-start;
-            &-photo{
-                &#order1{
-                    order: 2;
-                }
-            }
-            &-title{
-                flex: 0%;
+            flex-direction: column;
+            height: auto;
+            padding: 10px;
+            &-info{
+                width: 100%;
                 margin:0;
-                &#order2{
-                    order: 1;
+                padding: 0;
+                h2{
+                    padding: 10px;
                 }
             }
         }
-        
     }
    
         .popup{
@@ -339,13 +382,4 @@ $work-bg: #6FB3B8;
         }
     }
   
-  
-  @media only screen and (max-width: 500px) {
-    .projects{
-            .project-cards {
-                .project-card {
-                flex: 100%;
-                }
-            }
-    }
-  }
+
