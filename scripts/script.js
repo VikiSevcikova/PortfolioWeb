@@ -1,26 +1,3 @@
-// window.onload = () => {
-//     const transtition_elem = document.querySelector('.transition');
-//     const navLinkAnchors = document.querySelectorAll(".nav-links li a");
-
-//     setTimeout(() => {
-//         transtition_elem.classList.remove('is-active');
-//     }, 500);
-
-//     for(let i = 0; i < navLinkAnchors.length; i++){
-//         const anchor = navLinkAnchors[i];
-//         anchor.addEventListener('click', e => {
-//             e.preventDefault();
-//             let target = e.target.href;
-//             console.log(target);
-//             transtition_elem.classList.add('is-active');
-//             setTimeout(() => {
-//                 window.location.href = target;
-//                 transtition_elem.classList.remove('is-active');
-//             }, 500);
-//         })
-//     }
-// }
-
 const body = document.querySelector('body');
 const sr = ScrollReveal( {
     duration: 2000,
@@ -169,10 +146,3 @@ for (const image of images) {
         image.src = './img/logos/w-'+image.alt+'.png';
     });
 }
-
-
-// const app = () => {
-//     navSlide();
-// }
-
-// app();

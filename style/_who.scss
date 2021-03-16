@@ -354,8 +354,6 @@
             
             }   
         }
-       
-       
     }
     .timeline{
         &::before{
@@ -383,6 +381,16 @@
 
     @media only screen and (max-width: 650px){
     #introduction{
+        .card1{
+            width: 80vw;
+            .info{
+                .text{
+                    span{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
         .card2{
             flex-direction: column;
             justify-content: space-between;
