@@ -146,97 +146,6 @@ $work-bg: #6FB3B8;
 
         }
     }
-    // .web-card{
-    //     &-photo {
-    //         flex: 50%;
-    //         height: 100%;
-    //         img {
-    //             width: 100%;
-    //             height: 100%;
-    //             object-fit: cover;
-    //             transition: 0.5s;
-    //             &:hover{
-    //                 filter: brightness(80%);
-    //                 box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15)
-    //             }
-    //         }
-    //     }
-    //     &-title{
-    //         flex: 40%;
-    //         margin: 20px;
-    //         color: #6FB3B8;
-
-    //     }
-    // }
-    // .video-card{
-    //     &-photo {
-    //         position: relative;
-    //         flex: 40%;
-    //         height: 100%;
-    //         background-color: #0A0A0A;
-    //         // &#order1{
-    //         //     order: 1;
-    //         // }
-    //         img {
-    //             width: 100%;
-    //             height: 100%;
-    //             object-fit: cover;
-    //             opacity: 0.9;
-    //             cursor: pointer;
-    //             &:hover{
-    //                 filter: brightness(50%);
-    //                 box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15)
-    //             }
-    //         }
-    //         i{
-    //             position: absolute;
-    //             top: 50%;
-    //             left: 50%;
-    //             transform: translate(-50%, -50%);
-    //             font-size: 50px;
-    //             transition:all 0.5s ease-in;
-    //             cursor: pointer;
-    //         }
-    //         &:hover i{
-    //             font-size: 60px;
-    //         }
-    //     }
-    //     &-title{
-    //         flex: 40%;
-    //         margin: 20px;
-    //         // &#order2{
-    //         //     order: 2;
-    //         // }
-    //     }
-    // }
-
-    // .design-card{
-    //     &-photo {
-    //         flex: 50%;
-    //         height: 100%;
-    //         img {
-    //             width: 100%;
-    //             height: 100%;
-    //             object-fit: cover;
-    //             transition: 0.5s;
-    //             &:hover{
-    //                 filter: brightness(80%);
-    //                 box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15)
-    //             }
-    //         }
-    //         // &#order1{
-    //         //     order: 1;
-    //         // }
-    //     }
-    //     &-title{
-    //         flex: 40%;
-    //         margin: 20px;
-
-    //         // &#order2{
-    //         //     order: 2;
-    //         // }
-    //     }
-    // }
 }
 .popup {
     display: flex;
@@ -350,10 +259,11 @@ $work-bg: #6FB3B8;
     transform: rotate(0);
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1100px) {
     #work{
         .project{
-            align-items: flex-start;
+            align-items: center;
+
             flex-direction: column;
             height: auto;
             padding: 10px;
