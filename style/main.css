@@ -266,8 +266,14 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .popup-inner .popup-photo {
+    background: white;
+  }
   .popup-inner .popup-photo img {
-    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
     height: auto;
   }
 }
