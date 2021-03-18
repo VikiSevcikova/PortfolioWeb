@@ -225,8 +225,10 @@
 
 .popup-close {
   position: absolute;
+  width: 50px;
+  height: 50px;
   right: 20px;
-  top: 10px;
+  top: 30px;
   color: white;
   font-size: 30px;
   cursor: pointer;
