@@ -1091,6 +1091,10 @@ nav .popup-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1669,15 +1673,15 @@ footer .contact-links li a .icon::before {
     height: auto;
   }
   .banner .container .title {
-    display: block;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     position: absolute;
-    bottom: 45%;
     left: 5%;
-    -webkit-transform: translate(-5, -45%);
-            transform: translate(-5, -45%);
     width: 90%;
     z-index: 1;
   }

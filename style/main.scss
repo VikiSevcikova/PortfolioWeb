@@ -152,6 +152,7 @@ nav{
         }
         .title{
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             width: 50%;
@@ -535,12 +536,14 @@ footer{
                 
             }
             .title{
-                display: block;
+                // display: block;
+                height: 100%;
+                align-items: center;
                 justify-content: center;
                 position: absolute;
-                bottom: 45%;
+                // bottom: 45%;
                 left: 5%;
-                transform: translate(-5,-45%);
+                // transform: translate(-5,-45%);
                 width: 90%;   
                 z-index: 1;           
             }
