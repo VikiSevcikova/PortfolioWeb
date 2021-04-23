@@ -50,8 +50,12 @@ a{
         &.active{
             visibility: visible;
             opacity: 1;
-        }
-        
+        }  
+        i{
+            color: #ffe15cb6;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: white;
+        }      
 }
 
 nav{
@@ -60,7 +64,6 @@ nav{
     align-items: center;
     min-height: 8vh;
     font-family: 'Sriracha', cursive;
-    box-shadow: 0 8px 6px -8px rgba(255, 255, 255, 0.626);
     .logo{
         font-family: 'Dancing Script', cursive;
         text-transform: uppercase;
@@ -129,7 +132,7 @@ nav{
     margin: auto;
     overflow: hidden;
     .container{
-        transform-style: preserve-3d;
+        // transform-style: preserve-3d;
         display: flex;
         flex-direction: row;
         height: 80vh;
@@ -143,10 +146,6 @@ nav{
                 width: 80%;
                 height: auto;
                 transition: all 0.75s ease-in-out;
-                z-index: 1;
-                &#order2{
-                    order: 2;
-                }
             }
            
         }
@@ -156,7 +155,7 @@ nav{
             align-items: center;
             justify-content: center;
             width: 50%;
-            z-index: 0;
+            z-index: 1;
 
             svg {
                 max-width: 45rem;
@@ -270,7 +269,6 @@ footer{
         span{
             margin-right: 5px;
             font-size: 10px;
-            // width: 120px;
         }
     }
 
@@ -525,7 +523,6 @@ footer{
 
     .banner{
         .container{
-            // flex-direction: column;
             position: relative;
             .image{
                 justify-content: center;
@@ -536,14 +533,11 @@ footer{
                 
             }
             .title{
-                // display: block;
                 height: 100%;
                 align-items: center;
                 justify-content: center;
                 position: absolute;
-                // bottom: 45%;
                 left: 5%;
-                // transform: translate(-5,-45%);
                 width: 90%;   
                 z-index: 1;           
             }

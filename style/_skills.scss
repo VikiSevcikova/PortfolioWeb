@@ -1,7 +1,4 @@
-$skills-bg: #0c637b;    
-
 #skills{
-    // background-color: $skills-bg;
     position: relative;
     min-height:100vh;
     padding-bottom: 30px;
@@ -35,7 +32,6 @@ $skills-bg: #0c637b;
           display: grid;
           place-items: center;
           &::before {
-            // for apsect ratio
             content: "";
             display: block;
             padding-bottom: 100%;
@@ -43,8 +39,6 @@ $skills-bg: #0c637b;
           }
           img {
             width: 100%;
-            // height: 100%;
-            // object-fit: contain;
             filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.1));
             grid-area: 1 / 1 / 2 / 2;
           }
