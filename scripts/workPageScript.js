@@ -1,12 +1,12 @@
-sr.reveal('.projects .title', {
-    origin: 'left',
-    distance: '9000px'
- });
- sr.reveal('.projects h2', {
-    origin: 'left',
-    distance: '9000px',
-    delay: 500
- });
+// sr.reveal('.projects .title', {
+//     origin: 'left',
+//     distance: '9000px'
+//  });
+//  sr.reveal('.projects h2', {
+//     origin: 'left',
+//     distance: '9000px',
+//     delay: 500
+//  });
 sr.reveal('.project-card', {
     origin: 'bottom',
     distance: '100px',
@@ -14,7 +14,7 @@ sr.reveal('.project-card', {
  },50);
 
 //if link which opens popup is clicked set overflow hidden for the body
-const popuplinks = document.querySelectorAll('.project a');
+const popuplinks = document.querySelectorAll('.card a');
 for(let i = 0; i < popuplinks.length; i++){
     const popuplink = popuplinks[i];
     popuplink.addEventListener("click", (e)=>{

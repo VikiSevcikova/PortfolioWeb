@@ -279,7 +279,7 @@
                 <div><img src="img/logos/w-css.png" alt="css"></div>
                 <div><img src="img/logos/w-sass.png" alt="sass"></div>
                 <div><img src="img/logos/w-jquery.png" alt="jquery"></div>
-                <!-- <div><img src="img/logos/w-bootstrap.png" alt="bootstrap"></div> -->
+                <div><img src="img/logos/w-bootstrap.png" alt="bootstrap"></div>
                 <div><img src="img/logos/w-react.png" alt="react"></div>
                 <div><img src="img/logos/w-nodejs.png" alt="nodejs"></div>
                 <div><img src="img/logos/w-graphql.png" alt="graphql"></div>
@@ -311,74 +311,168 @@
                 <h1 class="work-title">
                     My work
                 </h1>
-
             </div>
-            <div class="project">
-                <a href="#" class="project-photo" data-popup="popup-app">
-                    <img src="img/weatherApp.png" alt="mbes.sk">
-                </a>
-                <div class="project-info">
-                    <h2>Weather App</h2>
-                    <p>Web Application, that shows the current weather for selected city.</p>
-                </div>
-            </div>
-            <div class="popup" id="popup-app">
-                <div class="popup-inner">
-                  <div class="popup-photo">
-                    <img src="img/weatherApp.png" alt="">
-                  </div>
-                  <div class="popup-text">
-                    <h1>Weather App</h1>
-                    <p>The application fetchs the weather with OpenWeatherMap API, using JavaScript. Web Application shows the current weather for a selected city and by clicking on the temperature you can change the unit.</p>
-                    <a class="website-link" href="https://vikisevcikova.github.io/WeatherApp/" target="_blank">Check the Web App <i class="far fa-laugh-beam"></i> </a>
-                </div>
-                </div>
-                <div class="popup-close">&#10006;</div> 
-            </div>
-            <div class="project">
-                <a href="#" class="project-photo" data-popup="popup-mbes">
-                    <img src="img/mbes.png" alt="mbes.sk">
-                </a>
-                <div class="project-info">
-                    <h2>mbes.sk</h2>
-                    <p>Website was created with Wordpress and Elementor Website Builder.</p>
-                </div>
-            </div>
-            <div class="popup" id="popup-mbes">
-                <div class="popup-inner">
-                  <div class="popup-photo">
-                    <img src="img/mbes.png" alt="">
-                  </div>
-                  <div class="popup-text">
-                    <h1>mbes.sk</h1>
-                    <p>MBES is a company that provides everything for the protection of your household. The website was created using Wordpress and Elementor Website Builder.</p>
-                    <a class="website-link" href="http://www.mbes.sk/" target="_blank">Check the website <i class="far fa-laugh-beam"></i> </a>
-                </div>
-                </div>
-                <div class="popup-close">&#10006;</div> 
-            </div>
-
-            <div class="project video-card">
-                <a href="#" class="project-photo video-card-photo" data-popup="ar">
-                    <img src="img/superheroes.PNG" alt="ar">                   
-                    <i class="fas fa-play"></i>
-                </a>
-                <div class="project-info video-card-title">
-                    <h2>Augmented Reality</h2>
-                    <h3>Change yourself to a superhero</h3>
-                    <p>The application was created for my Master's Degree Thesis, using Microsoft Kinect, unity3D technologies, and C# programming language.</p>
-                </div>
-            </div>
-            <div class="popup" id="ar">
-                <div class="popup-wrap">
-                    <div class="popup-image">
-                        <video id="video" width= 80% controls>
-                            <source src="videos/arsuperhero.mp4" type="video/mp4">
-                        </video>
+            <div class="projects">
+                <div class="grid">
+                    <div class="card">
+                        <a href="#" data-popup="popup-app">
+                            <img src="img/weatherApp.png" alt="weatherapp">
+                            <div class="overlay"> 
+                                <h2>Weather App</h2>
+                            </div>
+                        </a>
                     </div>
+                    <div class="popup" id="popup-app">
+                        <div class="popup-inner">
+                          <div class="popup-photo">
+                            <img src="img/weatherApp.png" alt="">
+                          </div>
+                          <div class="popup-text">
+                            <h1>Weather App</h1>
+                            <p>The application fetchs the weather with OpenWeatherMap API, using JavaScript. Web Application shows the current weather for a selected city and by clicking on the temperature you can change the unit.</p>
+                            <a class="website-link" href="https://vikisevcikova.github.io/WeatherApp/" target="_blank">Check the Web App <i class="far fa-laugh-beam"></i> </a>
+                        </div>
+                        </div>
+                        <div class="popup-close">&#10006;</div> 
+                    </div>
+                    <div class="card">
+                        <a href="#" data-popup="popup-mbes">
+                            <img src="img/mbes.png" alt="mbes.sk">
+                            <div class="overlay"> 
+                                <h2>mbes.sk</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popup" id="popup-mbes">
+                        <div class="popup-inner">
+                          <div class="popup-photo">
+                            <img src="img/mbes.png" alt="">
+                          </div>
+                          <div class="popup-text">
+                            <h1>mbes.sk</h1>
+                            <p>MBES is a company that provides everything for the protection of your household. The website was created using Wordpress and Elementor Website Builder.</p>
+                            <a class="website-link" href="http://www.mbes.sk/" target="_blank">Check the website <i class="far fa-laugh-beam"></i> </a>
+                        </div>
+                        </div>
+                        <div class="popup-close">&#10006;</div> 
+                    </div>
+
+                    <div class="card">
+                        <a href="#" data-popup="popup-movie">
+                            <img src="img/movieweb.png" alt="Movie Website">
+                            <div class="overlay"> 
+                                <h2>Cinema/Movie Website</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popup" id="popup-movie">
+                        <div class="popup-inner">
+                          <div class="popup-photo">
+                            <img src="img/movieweb.png" alt="Cinema/Movie Website">
+                          </div>
+                          <div class="popup-text">
+                            <h1>Cinema/Movie Website</h1>
+                            <p>Website was created with React.js, SCSS, Bootstrap, JavaScript. Data are fetched from The Movie Database API.</p>
+                            <a class="website-link" href="https://vikisevcikova.github.io/movie-website/" target="_blank">Check the website <i class="far fa-laugh-beam"></i> </a>
+                        </div>
+                        </div>
+                        <div class="popup-close">&#10006;</div> 
+                    </div>
+
+
+
+                    <div class="card">
+                        <a href="#" data-popup="ar">
+                            <img src="img/superheroes.PNG" alt="ar">   
+                            <div class="overlay"> 
+                                <h2>Augmented Reality - Project</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popup" id="ar">
+                        <div class="popup-wrap">
+                            <div class="popup-image">
+                                <video id="video" width= 80% controls>
+                                    <source src="videos/arsuperhero.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="popup-close">&#10006;</div> 
+                    </div>
+                    <div class="card">
+                        <a href="#" data-popup="nknike">
+                            <img src="img/nknike.PNG" alt="nknike">                   
+                            <div class="overlay"> 
+                                <h2>Nitra Knights</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popup" id="nknike">
+                        <div class="popup-wrap">
+                            <div class="popup-image">
+                                <video id="video" width= 80% controls>
+                                    <source src="videos/nknike.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="popup-close">&#10006;</div> 
+                    </div>
+
+                    <div class="card">
+                        <a  href="#" data-popup="popup-symples">
+                            <img src="img/symplepreview.png" alt="symples">                   
+                            <div class="overlay"> 
+                                <h2>SYMPLE'S Logo</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popup" id="popup-symples">
+                        <div class="popup-wrap">
+                            <div class="popup-image">
+                                <img src="img/symples.png" alt="symples" class="horizontal">
+                            </div>
+                        </div>
+                        <div class="popup-close">&#10006;</div> 
+                    </div>
+        
+                    <div class="card">
+                        <a  href="#" data-popup="popup-kvsp">
+                            <img src="img/kvsp.png" alt="nkvsp">                   
+                            <div class="overlay"> 
+                                <h2>GAMEDAY Poster</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popup" id="popup-kvsp">
+                        <div class="popup-wrap">
+                            <div class="popup-image">
+                                <img src="img/kvsp.png" alt="nkvsp" class="horizontal">
+                            </div>
+                        </div>
+                        <div class="popup-close">&#10006;</div> 
+                    </div>
+
+                    <div class="card">
+                        <a  href="#" data-popup="popup-sb">
+                            <img src="img/sb.png" alt="sb">                   
+                            <div class="overlay"> 
+                                <h2>Simonett's Baking Logo</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popup" id="popup-sb">
+                        <div class="popup-wrap">
+                            <div class="popup-image">
+                                <img src="img/sb.png" alt="sb" class="vertical">
+                            </div>
+                        </div>
+                        <div class="popup-close">&#10006;</div> 
+                    </div>
+
                 </div>
-                <div class="popup-close">&#10006;</div> 
             </div>
+            
+          
             <!-- <div class="popup" id="missing-video">
                 <div class="popup-inner">
                   <div class="popup-photo">
@@ -391,47 +485,7 @@
                 <div class="popup-close">&#10006;</div> 
             </div> -->
 
-
-            <div class="project video-card">
-                <a href="#" class="project-photo video-card-photo" data-popup="nknike">
-                    <img src="img/nknike.PNG" alt="nknike">                   
-                    <i class="fas fa-play"></i>
-                </a>
-                <div class="project-info video-card-title">
-                    <h2>Nitra Knights</h2>
-                    <p>In my free time, I am helping the American football team with marketing by creating posters or videos.</p>
-                </div>
-               
-            </div>
-            <div class="popup" id="nknike">
-                <div class="popup-wrap">
-                    <div class="popup-image">
-                        <video id="video" width= 80% controls>
-                            <source src="videos/nknike.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="popup-close">&#10006;</div> 
-            </div>
-
-            <div class="project design-card">
-                <a  href="#" class="project-photo design-card-photo" data-popup="popup-symples">
-                    <img src="img/symplepreview.png" alt="symples">                   
-                </a>
-                <div id="order2" class="project-info design-card-title">
-                    <h2>SYMPLE'S</h2>
-                    <p>I also get familiar with Adobe Illustrator and Adobe Photoshop in which I created few logos and posters.</p>
-                </div>
-            </div>
-
-            <div class="popup" id="popup-symples">
-                <div class="popup-wrap">
-                    <div class="popup-image">
-                        <img src="img/symples.png" alt="symples" class="horizontal">
-                    </div>
-                </div>
-                <div class="popup-close">&#10006;</div> 
-            </div>
+        
 
         </div>
 
