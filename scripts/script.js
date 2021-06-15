@@ -39,42 +39,40 @@ const changeNavIconColor = (color) => {
     });
 }
 
-// const navSlide = () => {
-    const navIcon = document.querySelector(".nav-icon");
-    const navIconAnchor = document.querySelector(".nav-icon a");
-    const navIconDivs = document.querySelectorAll(".nav-icon a div");
-    const navLinks = document.querySelectorAll(".popup-nav-links li a");
+const navIcon = document.querySelector(".nav-icon");
+const navIconAnchor = document.querySelector(".nav-icon a");
+const navIconDivs = document.querySelectorAll(".nav-icon a div");
+const navLinks = document.querySelectorAll(".popup-nav-links li a");
 
-    let isNavOpen = false;
-    navIcon.addEventListener('click', () => {
-        
-        if(isNavOpen){
-            isNavOpen = false;
-            changeNavIconColor('white');
-            navIconAnchor.href = '#';
-            body.classList.remove('overflow-hidden');
-        }else{
-            isNavOpen = true;
-            changeNavIconColor('black');
-            navIconAnchor.href = '#popup-nav';
-            body.classList.add('overflow-hidden');
-        }
+let isNavOpen = false;
+navIcon.addEventListener('click', () => {
+    
+    if(isNavOpen){
+        isNavOpen = false;
+        changeNavIconColor('white');
+        navIconAnchor.href = '#';
+        body.classList.remove('overflow-hidden');
+    }else{
+        isNavOpen = true;
+        changeNavIconColor('black');
+        navIconAnchor.href = '#popup-nav';
+        body.classList.add('overflow-hidden');
+    }
+    // icon animation
+    navIcon.classList.toggle('toggle');
+    
+});
+navLinks.forEach((navLink) => {
+    navLink.addEventListener('click', () => {
+            if(isNavOpen){
+                isNavOpen = false;
+                changeNavIconColor('white');
+                body.classList.remove('overflow-hidden');
+            }
         // icon animation
         navIcon.classList.toggle('toggle');
-        
     });
-    navLinks.forEach((navLink) => {
-        navLink.addEventListener('click', () => {
-                if(isNavOpen){
-                    isNavOpen = false;
-                    changeNavIconColor('white');
-                    body.classList.remove('overflow-hidden');
-                }
-            // icon animation
-            navIcon.classList.toggle('toggle');
-        });
-    });
-// }
+});
 
 
 //set active class to the navbar link

@@ -999,6 +999,7 @@ nav {
           align-items: center;
   min-height: 8vh;
   font-family: 'Sriracha', cursive;
+  z-index: 0;
 }
 
 nav .logo {

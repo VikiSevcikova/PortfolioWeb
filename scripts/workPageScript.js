@@ -1,12 +1,3 @@
-// sr.reveal('.projects .title', {
-//     origin: 'left',
-//     distance: '9000px'
-//  });
-//  sr.reveal('.projects h2', {
-//     origin: 'left',
-//     distance: '9000px',
-//     delay: 500
-//  });
 sr.reveal('.project-card', {
     origin: 'bottom',
     distance: '100px',
