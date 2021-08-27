@@ -6,4 +6,5 @@ Specifications:
     <li>HTML</li>
     <li>SCSS</li>
     <li>JavaScript</li>
+    <li>JQuery</li>
 </ul>
