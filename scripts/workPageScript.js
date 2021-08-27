@@ -31,7 +31,6 @@ const close = document.querySelectorAll('.popup .popup-close');
 
 for(let i = 0; i < close.length; i++){
     let c = close[i];
-    console.log(c);
     c.addEventListener('click', (e) => {
         body.classList.remove('overflow-hidden');
         console.log(c.parentElement);

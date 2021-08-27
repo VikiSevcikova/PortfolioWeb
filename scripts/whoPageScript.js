@@ -5,68 +5,45 @@ sr.reveal('.info',{
  sr.reveal('.timeline-container');
 
 
-(function($) {
-    $.fn.timeline = function() {
-      var selectors = {
-        id: $(this).find(".bg-image"),
-        item: $(this).find(".timeline-item"),
+const timeline = function(timelineElement) {
+      let selectors = {
+        id: timelineElement.querySelector(".bg-image"),
+        item: timelineElement.querySelectorAll(".timeline-item"),
         activeClass: "timeline-item-active",
         img: ".timeline-img"
       };
-      selectors.item.eq(0).addClass(selectors.activeClass);
-      selectors.id.css(
-        "background-image",
-        "url(" +
-          selectors.item
-            .first()
-            .find(selectors.img)
-            .attr("src") +
-          ")"
-      );
+      selectors.item[0].classList.add(selectors.activeClass);
+      selectors.id.style.backgroundImage = 
+        `url( 
+          ${selectors.item[0].querySelector(selectors.img).getAttribute('src')}
+          )`;
       
-      var itemLength = selectors.item.length;
-      $(window).scroll(function() {
-        var max, min;
-        var pos = $(this).scrollTop();
-        selectors.item.each(function(i) {
-          min = $(this).offset().top;
-          max = $(this).height() + $(this).offset().top;
-          var that = $(this);
-          if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
-            selectors.item.removeClass(selectors.activeClass);
-            selectors.id.css(
-              "background-image",
-              "url(" +
-                selectors.item
-                  .last()
-                  .find(selectors.img)
-                  .attr("src") +
-                ")"
-            );
-            selectors.item.last().addClass(selectors.activeClass);
-          } else if (pos <= max - 60 && pos >= min) {
-            selectors.id.css(
-              "background-image",
-              "url(" +
-                $(this)
-                  .find(selectors.img)
-                  .attr("src") +
-                ")"
-            );
-            selectors.item.removeClass(selectors.activeClass);
-            $(this).addClass(selectors.activeClass);
+      window.addEventListener('scroll', event => {
+        selectors.item.forEach((element, i) => {
+          let position = element.getBoundingClientRect();
+
+          if (position.top >= 0 && position.bottom <= window.innerHeight) {
+            if(i > 0) {
+              selectors.item[i-1].classList.remove(selectors.activeClass);
+            }
+            selectors.id.style.backgroundImage = 
+            `url( 
+              ${element.querySelector(selectors.img).getAttribute('src')}
+              )`;
+            element.classList.add(selectors.activeClass);
+          } else if (position.top < window.innerHeight && position.bottom >= 0) {
+            element.classList.remove(selectors.activeClass);
           }
         });
       });
-    };
-  })(jQuery);
+  };
   
-  $("#timeline-1").timeline();
+timeline(document.getElementById('timeline-1'));
   
 
   function elementInViewport(e) {
-    var top = e.offsetTop;
-    var height = e.offsetHeight;
+    let top = e.offsetTop;
+    let height = e.offsetHeight;
   
     while(e.offsetParent) {
       e = e.offsetParent;

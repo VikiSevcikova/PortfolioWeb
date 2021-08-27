@@ -8,10 +8,7 @@ const sr = ScrollReveal( {
     origin: 'top',
     distance: '100px'
  });
-//  sr.reveal('.banner',{
-//     origin: 'top',
-//     distance: '100px'
-//  });
+
  sr.reveal('#skills .grid div img',{
      duration: 1000,
     interval: 20
@@ -84,17 +81,6 @@ for(let i = 0; i<navItems.length; i++){
     }
 }
 
-// //Banner
-// const image = document.querySelector('.image img');
-// image.addEventListener("mouseenter", e => {
-//      //rotate effect
-//      image.style.transform = 'rotateZ(-90deg)';
-//  });
-// image.addEventListener("mouseleave", e => {
-//     //rotateback effect
-//     image.style.transform = 'rotateZ(0deg)';
-// });
-
 let TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -138,11 +124,9 @@ TxtType.prototype.tick = function() {
 
 window.onload = function() {
     let elements = document.getElementsByClassName('typewrite');
-    console.log(elements)
     for (var i=0; i<elements.length; i++) {
         let toRotate = elements[i].getAttribute('data-type');
         let period = elements[i].getAttribute('data-period');
-        console.log(JSON.parse(toRotate))
         if (toRotate) {
           new TxtType(elements[i], JSON.parse(toRotate), period);
         }
